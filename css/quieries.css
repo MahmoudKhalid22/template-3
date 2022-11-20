@@ -34,11 +34,11 @@
     font-size: 1.2rem;
   }
   header .container ul > li > a {
-    padding: 1rem 2rem;
     font-size: 0.6rem;
     height: 2rem;
   }
   header .container ul {
-    width: 91%;
+    margin: 0.5rem 0 0 0;
+    width: 100%;
   }
 }
