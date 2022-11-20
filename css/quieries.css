@@ -1,0 +1,21 @@
+.container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* MOBILES */
+@media (max-width: 48em) {
+  .container {
+    width: 46.875rem;
+  }
+  .header .logo {
+    width: 100%;
+  }
+}
+/* TABLETS */
+@media (max-width: 48em) {
+  .container {
+    width: 60.625rem;
+  }
+}

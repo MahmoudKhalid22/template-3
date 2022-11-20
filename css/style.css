@@ -1,0 +1,79 @@
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+/* ************************ */
+/* HEADER */
+/* ************************ */
+header {
+  background-color: white;
+  box-shadow: 0 0 10px #ddd;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+}
+header .logo {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  /* display: none; */
+}
+
+header .container ul > li > a {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  padding: 0 1.875rem;
+  height: 4.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+header .container ul > li > a::before {
+  content: "";
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-color);
+  height: 3px;
+  top: 0;
+  left: -100%;
+  transition: 0.3s;
+}
+header .container ul > li > a:hover {
+  color: var(--main-color);
+  background-color: #fafafa;
+}
+header .container ul > li > a:hover::before {
+  left: 0;
+}
