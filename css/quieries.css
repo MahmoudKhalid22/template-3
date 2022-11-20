@@ -19,3 +19,26 @@
     width: 60.625rem;
   }
 }
+@media (max-width: 34em) {
+  .container {
+    width: 46.875rem;
+  }
+  header {
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header .logo {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+  header .container ul > li > a {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+    height: 2rem;
+  }
+  header .container ul {
+    width: 91%;
+  }
+}
