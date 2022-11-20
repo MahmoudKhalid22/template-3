@@ -34,7 +34,9 @@
     font-size: 1.2rem;
   }
   header .container ul > li > a {
-    font-size: 0.6rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.7rem;
     height: 2rem;
   }
   header .container ul {
