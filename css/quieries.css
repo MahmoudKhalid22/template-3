@@ -25,7 +25,7 @@
 /**************************/
 @media (max-width: 44em) {
   .container {
-    width: 26rem;
+    width: 31rem;
   }
   header {
     height: 5.7rem;
@@ -56,14 +56,19 @@
 /**************************/
 @media (max-width: 34em) {
   .container {
-    width: 20rem;
+    width: 23rem;
   }
-  .header .logo {
+  header .logo {
     width: 100%;
     font-size: 1.5rem;
   }
   .landing .text p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 22.5625em) {
+  .container {
+    width: 20rem;
   }
 }
 /**************************/
