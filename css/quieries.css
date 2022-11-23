@@ -28,13 +28,13 @@
     width: 26rem;
   }
   header {
-    height: 2.5rem;
+    height: 5.7rem;
     display: flex;
     flex-wrap: wrap;
   }
   header .logo {
     width: 100%;
-    height: 2rem;
+    height: 3.125rem;
     font-size: 2.2rem;
   }
   header .container ul > li > a {
@@ -44,7 +44,7 @@
     height: 2rem;
   }
   header .container ul {
-    margin: 0.5rem 0 0 0;
+    margin: auto;
     width: 100%;
   }
   .landing .text h1 {
@@ -56,10 +56,11 @@
 /**************************/
 @media (max-width: 34em) {
   .container {
-    width: 18rem;
+    width: 20rem;
   }
   .header .logo {
     width: 100%;
+    font-size: 1.5rem;
   }
   .landing .text p {
     font-size: 1rem;
