@@ -50,6 +50,9 @@
   .landing .text h1 {
     font-size: 1.75rem;
   }
+  .landing .container {
+    height: calc(100vh - 5.7rem);
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -66,7 +69,7 @@
     font-size: 1rem;
   }
 }
-@media (max-width: 22.5625em) {
+@media (max-width: 22.375em) {
   .container {
     width: 20rem;
   }
