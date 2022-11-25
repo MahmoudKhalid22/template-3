@@ -366,6 +366,110 @@ header .container > ul > li > a:hover::before {
   transform: rotate(5deg) scale(1.1);
 }
 /* ************************ */
+/* FEATURES */
+/* ************************ */
+.feature {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+.feature .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+/* #f44036 */
+.f-box {
+  border: 1px solid #ccc;
+}
+.feature .container .f-box .image-holder {
+  position: relative;
+}
+.feature .container .f-box .image-holder::before {
+  content: "";
+  position: absolute;
+  /* background-color: rgb(244 64 54 / 60%); */
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  left: 0;
+  top: 0;
+}
+.feature .container .f-box .i-1::before {
+  background-color: rgb(244 64 54 / 60%);
+}
+.feature .container .f-box .i-2::before {
+  background-color: rgb(0 150 136 / 60%);
+}
+.feature .container .f-box .i-3::before {
+  background-color: rgb(3 169 244 / 60%);
+}
+.feature .container .f-box .f-1::after {
+}
+.feature .container .f-box img {
+  width: 100%;
+}
+.f-box .f-text {
+  position: relative;
+  text-align: center;
+}
+.f-box .f-text h2 {
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+.f-box .f-text h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 2.5rem; */
+  height: 0.3125rem;
+  /* background-color: red; */
+  top: 25%;
+}
+.f-box .f-text .quality::after {
+  width: 6rem;
+  background-color: #f44036;
+}
+.f-box .f-text .time::after {
+  width: 3rem;
+  background-color: #009688;
+}
+.f-box .f-text .passion::after {
+  width: 8rem;
+
+  background-color: #03a9f4;
+}
+.f-box .f-text p {
+  color: #777;
+  font-size: 1.25rem;
+  padding: 1.5625rem;
+  line-height: 2;
+  margin: 1.875rem 0;
+}
+.f-box a {
+  display: block;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  width: fit-content;
+  margin: 0 auto 1.875rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+.f-box .quality-link {
+  color: #f44036;
+  border: 3px solid #f44036;
+}
+.f-box .time-link {
+  color: #009688;
+  border: 3px solid #009688;
+}
+.f-box .passion-link {
+  color: #03a9f4;
+  border: 3px solid #03a9f4;
+}
+/* ************************ */
 /* CREATING ANIMATION */
 /* ************************ */
 @keyframes up-and-down {
