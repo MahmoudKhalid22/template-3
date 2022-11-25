@@ -377,7 +377,6 @@ header .container > ul > li > a:hover::before {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
-/* #f44036 */
 .f-box {
   border: 1px solid #ccc;
 }
@@ -387,7 +386,6 @@ header .container > ul > li > a:hover::before {
 .feature .container .f-box .image-holder::before {
   content: "";
   position: absolute;
-  /* background-color: rgb(244 64 54 / 60%); */
   width: 100%;
   height: 100%;
   z-index: 11;
@@ -403,14 +401,14 @@ header .container > ul > li > a:hover::before {
 .feature .container .f-box .i-3::before {
   background-color: rgb(3 169 244 / 60%);
 }
-.feature .container .f-box .f-1::after {
-}
+/* .feature .container .f-box .f-1::after {
+} */
 .feature .container .f-box img {
   width: 100%;
 }
 .f-box .f-text {
-  position: relative;
   text-align: center;
+  position: relative;
 }
 .f-box .f-text h2 {
   margin: 2rem;
@@ -421,9 +419,7 @@ header .container > ul > li > a:hover::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* width: 2.5rem; */
   height: 0.3125rem;
-  /* background-color: red; */
   top: 25%;
 }
 .f-box .f-text .quality::after {
@@ -431,12 +427,11 @@ header .container > ul > li > a:hover::before {
   background-color: #f44036;
 }
 .f-box .f-text .time::after {
-  width: 3rem;
+  width: 4rem;
   background-color: #009688;
 }
 .f-box .f-text .passion::after {
   width: 8rem;
-
   background-color: #03a9f4;
 }
 .f-box .f-text p {
@@ -456,6 +451,8 @@ header .container > ul > li > a:hover::before {
   border-radius: 12px;
   font-weight: bold;
   font-size: 1.375rem;
+  position: relative;
+  transition: 0.3s;
 }
 .f-box .quality-link {
   color: #f44036;
@@ -469,6 +466,32 @@ header .container > ul > li > a:hover::before {
   color: #03a9f4;
   border: 3px solid #03a9f4;
 }
+.f-box a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s;
+}
+.feature .container .f-box:hover a {
+  color: white;
+}
+.feature .container .f-box:hover .quality-link::before {
+  width: 100%;
+  background-color: #f44036;
+}
+.feature .container .f-box:hover .time-link::before {
+  width: 100%;
+  background-color: #009688;
+}
+.feature .container .f-box:hover .passion-link::before {
+  width: 100%;
+  background-color: #03a9f4;
+}
+
 /* ************************ */
 /* CREATING ANIMATION */
 /* ************************ */
