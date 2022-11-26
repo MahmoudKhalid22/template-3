@@ -379,9 +379,11 @@ header .container > ul > li > a:hover::before {
 }
 .f-box {
   border: 1px solid #ccc;
+  text-align: center;
 }
 .feature .container .f-box .image-holder {
   position: relative;
+  overflow: hidden;
 }
 .feature .container .f-box .image-holder::before {
   content: "";
@@ -391,6 +393,7 @@ header .container > ul > li > a:hover::before {
   z-index: 11;
   left: 0;
   top: 0;
+  transition: 0.3s border-width, 0.3s border-color;
 }
 .feature .container .f-box .i-1::before {
   background-color: rgb(244 64 54 / 60%);
@@ -401,18 +404,36 @@ header .container > ul > li > a:hover::before {
 .feature .container .f-box .i-3::before {
   background-color: rgb(3 169 244 / 60%);
 }
+.feature .container .f-box .image-holder::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 100px 100px 100px 100px;
+  border-width: 0 0 170px 500px;
+  /* border-color: red green blue black; */
+  border-color: transparent transparent white transparent;
+  z-index: 11;
+  transition: 0.3s;
+}
+.feature .container .f-box:hover .image-holder::after {
+  border-width: 0 500px 170px 0;
+  border-color: transparent transparent white transparent;
+}
 /* .feature .container .f-box .f-1::after {
 } */
 .feature .container .f-box img {
   width: 100%;
 }
-.f-box .f-text {
+/* .f-box .f-text {
   text-align: center;
   position: relative;
-}
+} */
 .f-box .f-text h2 {
   margin: 2rem;
   font-size: 2.5rem;
+  position: relative;
 }
 .f-box .f-text h2::after {
   content: "";
@@ -420,7 +441,7 @@ header .container > ul > li > a:hover::before {
   left: 50%;
   transform: translateX(-50%);
   height: 0.3125rem;
-  top: 25%;
+  top: 3.5rem;
 }
 .f-box .f-text .quality::after {
   width: 6rem;
@@ -431,7 +452,7 @@ header .container > ul > li > a:hover::before {
   background-color: #009688;
 }
 .f-box .f-text .passion::after {
-  width: 8rem;
+  width: 7rem;
   background-color: #03a9f4;
 }
 .f-box .f-text p {
@@ -491,7 +512,30 @@ header .container > ul > li > a:hover::before {
   width: 100%;
   background-color: #03a9f4;
 }
-
+/* ************************ */
+/* TESTIMONIAL */
+/* ************************ */
+.testimonial {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-color: var(--section-background);
+}
+.testimonial .container .test-box {
+  background-color: white;
+  padding: 1.3rem;
+  width: fit-content;
+  border-radius: 12px;
+}
+.testimonial .container .test-box h3 {
+  margin-bottom: 0.625rem;
+}
+.testimonial .container .test-box p {
+  color: #777;
+  margin-bottom: 0.625rem;
+}
+.testimonial .container .test-box i {
+  color: yellow;
+}
 /* ************************ */
 /* CREATING ANIMATION */
 /* ************************ */
