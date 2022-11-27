@@ -4,8 +4,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+/* *********************** */
+/* BELOW 991px */
+/* *********************** */
+@media (max-width: 61.9375em) {
+}
 /**************************/
-/* BELOW 944px (Tablets) */
+/* BELOW 944px (tablets) */
 /**************************/
 @media (max-width: 59em) {
   .landing .image {
@@ -21,6 +26,12 @@
   }
   .mega-menu .image {
     display: none;
+  }
+  .skills .container img {
+    display: none;
+  }
+  .skill-box {
+    margin: 0 auto;
   }
 }
 /**************************/
