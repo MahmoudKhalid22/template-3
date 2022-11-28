@@ -877,6 +877,10 @@ header .container > ul > li > a:hover::before {
   margin: 1.875rem;
   justify-content: center;
 }
+.events .info,
+.events .info .time .unit:last-of-type {
+  margin-right: 0;
+}
 .events .info .time .unit {
   border: 1px solid #d4d4d4;
   border-radius: 6px;
