@@ -40,6 +40,15 @@
   .how .container .how-box {
     max-width: 100%;
   }
+  .events img {
+    display: none;
+  }
+  .events .info,
+  .events .info .time {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
@@ -83,6 +92,21 @@
   }
   .how .container .how-box img {
     margin-bottom: 1.75rem;
+    margin-right: 0;
+  }
+  .events .subscribe form {
+    max-width: 100%;
+    padding: 1.25rem;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .events .subscribe form input[type="email"] {
+    border-radius: 0;
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+  }
+  .events .subscribe form input[type="submit"] {
+    border-radius: 0;
   }
 }
 /**************************/
