@@ -786,6 +786,81 @@ header .container > ul > li > a:hover::before {
   font-size: 0.75rem;
 }
 /* ************************ */
+/* HOW IT WORKS */
+/* ************************ */
+.how {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+  background-color: var(--section-background);
+}
+.how .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+}
+.how .container .how-image {
+  margin-right: 6.25rem;
+  max-width: 100%;
+}
+.how .container .how-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.how .container .how-box {
+  display: flex;
+  align-items: center;
+  background-color: #f6f5f5;
+  border: 2px solid white;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  /* max-width: 22.5rem; */
+  /* width: 100%; */
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+.how .container .how-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  height: 0;
+  width: 0;
+  background-color: #ededed;
+  z-index: -1;
+}
+.how .container .how-box:hover::before {
+  height: 100%;
+  width: 100%;
+}
+.how .container .how-box .how-text h2 {
+  margin-bottom: 0.75rem;
+}
+.how .container .how-box .how-text p {
+  /* max-width: 22.5rem; */
+  color: #777;
+  line-height: 2;
+  font-size: 1rem;
+}
+.how .container .how-box img {
+  width: 4rem;
+  margin-right: 1.875rem;
+}
+/* ************************ */
+/* EVENTS */
+/* ************************ */
+.events {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+}
+/* ************************ */
 /* CREATING ANIMATION */
 /* ************************ */
 @keyframes up-and-down {

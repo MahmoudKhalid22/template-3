@@ -4,11 +4,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* *********************** */
-/* BELOW 991px */
-/* *********************** */
-@media (max-width: 61.9375em) {
-}
 /**************************/
 /* BELOW 944px (tablets) */
 /**************************/
@@ -32,6 +27,18 @@
   }
   .skill-box {
     margin: 0 auto;
+  }
+  .how .container {
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .how .container .how-image {
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
+  .how .container .how-box {
+    max-width: 100%;
   }
 }
 /**************************/
@@ -69,6 +76,13 @@
   }
   .mega-menu .links li a {
     font-size: 1rem;
+  }
+  .how .container .how-box {
+    text-align: center;
+    flex-direction: column;
+  }
+  .how .container .how-box img {
+    margin-bottom: 1.75rem;
   }
 }
 /**************************/
