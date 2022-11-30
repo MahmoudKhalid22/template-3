@@ -1155,7 +1155,93 @@ header .container > ul > li > a:hover::before {
 .video .holder .preview img {
   max-width: 100%;
 }
-.video .holder .list {
+/* ************************ */
+/* STATS */
+/* ************************ */
+.stats {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+  background-image: url(../imgs/stats.jpg);
+  background-size: cover;
+  min-height: 18.75rem;
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.stats h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 3.125rem;
+  position: relative;
+}
+.stats .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+}
+.stats .box {
+  background-color: white;
+  padding: 1.875rem 0.9375rem;
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+  transition: 0.3s;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.stats .box:hover {
+  opacity: 1;
+}
+.stats .box::before,
+.stats .box::after {
+  content: "";
+  position: absolute;
+
+  height: 0;
+  width: 3px;
+  background-color: var(--main-color);
+  transition: 0.7s ease;
+}
+.stats .box::before {
+  bottom: 0;
+  right: 0;
+}
+.stats .box:hover::before {
+  height: 100%;
+}
+.stats .box::after {
+  top: 0;
+  left: 0;
+}
+.stats .box:hover::after {
+  height: 100%;
+}
+
+.stats .box i {
+  font-size: 1.5rem;
+}
+.stats .box .number {
+  display: block;
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-top: 0.625rem;
+  margin-bottom: 0.9375rem;
+}
+.stats .box .text {
+  color: var(--main-color);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 /* ************************ */
 /* CREATING ANIMATION */
