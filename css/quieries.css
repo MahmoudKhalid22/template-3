@@ -52,6 +52,10 @@
   .video .holder {
     flex-direction: column;
   }
+  .request .image,
+  .request .form {
+    flex-basis: 100%;
+  }
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */

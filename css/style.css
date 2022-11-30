@@ -1244,6 +1244,93 @@ header .container > ul > li > a:hover::before {
   font-weight: bold;
 }
 /* ************************ */
+/* DISCOUNT */
+/* ************************ */
+.request {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.request .content {
+  text-align: center;
+  padding: 0 1.25rem;
+}
+.request .content h2 {
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  padding: 1.25rem;
+}
+.request .content p {
+  line-height: 1.6;
+  font-size: 1.125rem;
+  max-width: 31.25rem;
+}
+.request .content img {
+  width: 18.75rem;
+  max-width: 100%;
+}
+.request .image {
+  background-image: url(../imgs/discount-background1.jpg);
+  background-size: cover;
+  color: white;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  animation: change-background 10s linear infinite;
+}
+.request .image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 135, 224, 0.97);
+  z-index: -1;
+}
+.request .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.request .form .input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5625rem;
+  padding: 0.9375rem;
+  border: none;
+  border-bottom: 1x solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+}
+.request .form .input:focus {
+  outline: none;
+}
+
+.request .form textarea.input {
+  resize: none;
+  height: 12.5rem;
+}
+.request .form [type="submit"] {
+  /* display: block; */
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.request .form [type="submit"]:hover {
+  background-color: var(--main-color-alt);
+}
+
+/* ************************ */
 /* CREATING ANIMATION */
 /* ************************ */
 @keyframes up-and-down {
@@ -1316,5 +1403,14 @@ header .container > ul > li > a:hover::before {
     opacity: 0;
     width: 200%;
     height: 200%;
+  }
+}
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url(../imgs/discount-background1.jpg);
+  }
+  50% {
+    background-image: url(../imgs/discount-background2.jpg);
   }
 }
