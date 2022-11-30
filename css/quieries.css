@@ -144,6 +144,24 @@
   .mega-menu .right {
     margin-left: 0;
   }
+  .footer {
+    text-align: center;
+  }
+  .footer .box h3 {
+    font-size: 2.125rem;
+  }
+  .footer .box .social {
+    justify-content: center;
+    margin-bottom: 0.625rem;
+  }
+  .footer .box .line {
+    flex-direction: column;
+  }
+
+  .footer .box .line i {
+    margin-right: 0;
+    margin-bottom: 0.625rem;
+  }
 }
 /* ************************** */
 /* FOR IPHONES */

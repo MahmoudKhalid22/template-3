@@ -1329,7 +1329,113 @@ header .container > ul > li > a:hover::before {
 .request .form [type="submit"]:hover {
   background-color: var(--main-color-alt);
 }
+/* ************************ */
+/* FOOTER */
+/* ************************ */
+.footer {
+  background-color: #191919;
+  padding: 4.375rem 0 0;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+  gap: 2.5rem;
+}
+.footer .box h3 {
+  font-size: 3.125rem;
+  color: white;
+  margin: 0 0 1.25rem;
+}
+.footer .box .social {
+  display: flex;
+}
+.footer .box .social li {
+  margin-right: 0.625rem;
+}
+.footer .box .social li a {
+  background-color: #313131;
+  color: #b9b9b9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+.footer .box .social .linkedin:hover {
+  background-color: #0077b5;
+}
+.footer .box .social .facebook:hover {
+  background-color: #1877f2;
+}
+.footer .box .social .github:hover {
+  background-color: #6cc644;
+}
+.footer .box .social .twitter:hover {
+  background-color: #1da1f2;
+}
+.footer .box .text {
+  line-height: 2;
+  color: #b9b9b9;
+}
+.footer .box .links li {
+  padding: 0.9375rem 0;
+  transition: 0.3s;
+}
+.footer .box .links li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.footer .box .links li:hover {
+  padding-left: 0.625rem;
+}
+.footer .box .links li a {
+  transition: 0.3s;
+  color: #b9b9b9;
+}
+.footer .box .links li a:hover {
+  color: white;
+}
+.footer .box .links li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 0.625rem;
+  color: var(--main-color);
+}
+.footer .box .line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+  margin-bottom: 1.875rem;
+}
+.footer .box .line i {
+  font-size: 1.5625rem;
+  color: var(--main-color);
+  margin-right: 0.625rem;
+}
+.footer .box .line .info {
+  line-height: 1.7;
+  flex: 1;
+  /* color: darkgreen; */
+}
+.footer .box .line .info span {
+  display: block;
+}
 
+.footer .footer-gallery img {
+  width: 4.875rem;
+  border: 3px solid white;
+  margin: 3px;
+}
+.footer .copyright {
+  padding: 1.5625rem 0;
+  text-align: center;
+  color: white;
+  /* display: block; */
+  margin: 3.125rem 0 0;
+  border-top: 1px solid #444;
+}
 /* ************************ */
 /* CREATING ANIMATION */
 /* ************************ */
